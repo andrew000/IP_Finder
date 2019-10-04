@@ -7,7 +7,7 @@ import struct
 def find_ip(file):
     with open(file, "r") as file:
 
-        text = [x for x in [re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", x) for x in file.readlines()]]
+        text = [re.findall(r"\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\b", x) for x in file.readlines()]
         ip_list = []
         for i in text:
             for _ in i:
