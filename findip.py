@@ -34,8 +34,7 @@ def write_ip(true_ip):
 
 def main():
     if len(sys.argv) != 2:
-        print("I need file with ip, to find ip\nExample: python3 ips.txt")
-        exit()
+        exit("I need file with ip, to find ip\nExample: python3 ips.txt")
 
     ip_list = find_ip(sys.argv[1])
     true_ip = validate_ip(ip_list)
